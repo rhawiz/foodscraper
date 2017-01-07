@@ -6,6 +6,7 @@ import re
 import string
 
 import sys
+from time import sleep
 
 import numpy
 from bs4 import BeautifulSoup
@@ -107,3 +108,6 @@ def print_progress(iteration, total, prefix='', suffix='', decimals=1, bar_len=1
 
 def to_ascii(str):
     return filter(lambda x: x in set(string.printable), str).strip()
+
+
+
